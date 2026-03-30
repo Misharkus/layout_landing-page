@@ -1,0 +1,21 @@
+.main {
+  &__content {
+    display: grid;
+    width: 100%;
+
+    // row-gap: 64px;
+    padding-block: 64px;
+
+    // @include content-padding-inline;
+
+    @include on-tablet {
+      // row-gap: 120px;
+      padding-block: 120px;
+    }
+  }
+}
+
+.img-hover:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+}
